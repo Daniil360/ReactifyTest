@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="icon" type="image/svg+xml" href="icon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+        <script src="script.js"></script>
+
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
 </head>
+
 <body>
-    <h1>Мое Портфолио</h1>
-</body>
+    <header>
+        <span>Ruslan</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">Обо мне</a>
+                </li>
+                <li>
+                    <a href="#education">Образование</a>
+                </li>
+                <li>
+                    <a href="#projects">Проекты</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr />
+
+    <main>
+        <h1>Портфолио Руслана</h1>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>
+                Я будущий <em>Фронтенд разработчик</em>. Люблю <b>танцевать</b>,
+                <strong>программировать и учиться</strong>
+            </p>
+            <img width="300px" src="photo.png" alt="avatar">
+        </section>
+        <br>
+        <section id="education">
+            <h2>Образование</h2>
+
+            <ul>
+                <li>Лицей 90</li>
+                <li>КубГАУ</li>
+            </ul>
+
+            <h2>Навыки</h2>
+
+            <ul>
+                <li>Английский</li>
+                <li><abbr title="С помощью него мы верстаем сайты">HTML</abbr></li>
+            </ul>
+        </section>
+
+        <br>
+        <section id="projects">
+            <h2>Проекты</h2>
+
+            <article>
+                <h3>Портфолио</h3>
+                <details>
+                    <summary>Подробнее о проекте</summary>
+                    <p>Это мой <mark>первый проект</mark> как Фронтенд разработчика</p>
+                </details>
+            </article>
+        </section>
+
+        <br>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <address>
+                <ol>
+                    <li>
+                        <p>Email:</p>
+                        <a href="mailto:ruslan@gmail.com">
+                        ruslan@gmail.com</a>
+                    </li>
+                    <li>
+                        <p>Phone:</p>
+                        <a href="tel:+77777777777">
+                            +77777777777</a>
+                    </li>
+                </ol>
+            </address>
+            <form>
+                <div>
+                    <input type="email" placeholder="Ваш email">
+                </div>
+                <div>
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+
+                <select name="" id="">
+                    <option value="student">Студент</option>
+                    <option value="teacher">Преподователь</option>
+                    <option value="developer">Разработчик</option>
+                    <option value="other">Другое</option>
+                </select>
+
+                <div>
+                    <label for="">
+                        Написать
+                        <input type="checkbox">
+                    </label>
+                </div>
+
+                <textarea placeholder="Сообщение">
+                </textarea>
+                <br>
+
+                <button type="submit">Отправить</button>
+
+                <hr>
+                <footer>
+                    <p>&copy; 2024 Руслан</p>
+                    <a href="https://www.youtube.com/@reactify-it">YouTube</a>
+                </footer>
+            </form>
+        </section>
+    </main>
+    </body>
+
 </html>
